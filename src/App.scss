@@ -1,0 +1,54 @@
+@import './assets/style/colors.scss';
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    color: $mainColor; 
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+  
+.main-loading {
+  transform: translate(-50%, -50%);
+  background: $shadow;
+  position: fixed;
+  padding: 100%;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+}
+  
+.Toastify__toast-container {
+  width: 380px;
+  font-size: 12px;
+  font-weight: 900;
+  
+  .Toastify__toast--info {
+    text-align: center;
+    color: rgb(199, 199, 199);
+    background:  $mainColor;
+  }
+
+  .Toastify__toast--success {
+    text-align: center;
+    color: rgb(199, 199, 199);
+    background:  $mainColor;
+  }
+
+  .Toastify__toast--warning {
+    color: rgb(199, 199, 199);
+    background: $mainColor;
+  }
+
+  .Toastify__toast--error {
+    color: $gray;
+    text-align: center;
+    background: rgb(168, 38, 38);
+  }
+        
+}
+
+
+@import './assets/style/data.scss';
+@import './assets/style/landing.scss';

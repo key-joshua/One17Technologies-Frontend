@@ -1,2 +1,15 @@
-# One17Technologies-Frontend
-One17 Technologies Frontend
+# FRONTEND ASSESSMENT
+
+- This Frontend Assessment
+
+
+## GETTING START WITH PROJECT
+
+- Install the required dependencies found in package.json by running this command:
+ ```
+npm install
+ ```
+- And then to start running  this project on your machine , run this command:
+ ```
+npm run client
+ ```

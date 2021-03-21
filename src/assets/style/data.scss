@@ -1,0 +1,245 @@
+@import './colors.scss';
+@import './size.scss';
+
+.data-page {
+    .container {
+        padding: 00px 00px 50px 00px;
+        width: $containerWidth;
+        background: $white;
+        margin: 50px auto;
+
+        .header-container {
+            background: $mainColor;
+            margin: 30px auto;
+            padding: 30px 00px;
+            h1 {
+                color: $white;
+            }
+        }
+
+        .action-container {
+            grid-template-columns: 1fr 1fr 1fr;
+            margin: 15px auto;
+            display: grid;
+
+            .search-action {
+                text-align: left;
+                margin: auto;
+                width: 85%;
+
+                input {
+                    border-radius: 10px 0px 00px 10px;
+                    border: 1px solid $mainColor;
+                    font-size: 16px;
+                    padding: 09px;
+                    outline: none;
+                    color: $mainColor;
+                    width: 50%;
+                }
+
+                input::placeholder {
+                    color: $mainColor;
+                }
+          
+                .icon {
+                    border-radius: 00px 10px 10px 00px;
+                    background-color: $mainColor;
+                    margin: - 12px auto;
+                    padding: 10px 16px;
+                    cursor: pointer;
+                    font-size: 20px;
+                    color: $white;
+                }
+          
+                .icon:active {
+                    background-color: $activeMainColor;
+                }
+            }
+
+            .reload-action {
+                text-align: center;
+                margin: 10px auto;
+                width: 100%;
+
+                .icon {
+                    margin: auto 50px;
+                    color: $mainColor;
+                    cursor: pointer;
+                    font-size: 30px;
+                }
+            }
+
+            .paginate-action {
+                text-align: right;
+                margin: 10px auto;
+                width: 85%;
+          
+                .paginate-angles {
+                    font-size: 18px;
+                    cursor: pointer;
+                    margin: -11px auto;
+                    padding: 08px 11px;
+                    border: 1px solid $gray;
+                    border-radius: 05px 05px 05px 05px;
+                }
+                  
+                .paginate-page {
+                    color: $white;
+                    font-size: 13px;
+                    font-weight: 600;
+                    margin: auto 15px;
+                    padding: 10px 10px;
+                    background: $mainColor;
+                    border-radius: 05px 05px 05px 05px;
+                }
+            }
+        }  
+
+        .table-container {
+            
+            table {
+                border-collapse: collapse;
+                border: 1px solid $gray;
+                width: $tableWidth;
+                margin: 20px auto;
+                text-align: left;
+                font-size: 13px;
+
+                th {
+                    background-color: $tableHeader;
+                    color: $mainColor;
+                    padding: 8px;
+                }
+                
+                .active-column {
+                    text-decoration: underline;
+                }
+
+                .active-column:hover {
+                    color: $addButton;
+                    cursor: pointer;
+                }
+
+                td {
+                    border-top: 1px solid #eeeeee;
+                    padding: 8px; 
+                    color: $mainColor;
+                
+                    input {
+                        width: 100%;
+                        border: none;
+                        color: $mainColor;
+                        outline: none;
+                        font-size: 16px;
+                        padding: 10px 00px;
+                    }
+                }
+
+                .table-button {
+                    padding: 05px;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+
+                    button {
+                        border: none;
+                        color: $white;
+                        outline: none;
+                        cursor: pointer;
+                        font-size: 20px;
+                        margin: 00px 05px;
+                        padding: 05px 20px;
+                    }
+
+                    .update { color: $addButton; background: $white;} .update:active { color: $addButtonActive;  background: $white;}
+                    .delete { color: $red;  background: $white;} .delete:active { color: $redActive;  background: $white;}
+                }
+            }
+        }
+
+        
+        .form-container{
+            top: 55%;
+            left: 50%;
+            width: 40%;
+            z-index: 10;
+            overflow: auto;
+            position: fixed;
+            text-align: center;
+            background: $tableHeader; 
+            transform: translate(-50%, -50%);
+            border-radius: 10px 00px 00px 10px;
+            box-shadow: 05px 05px 10px 00px rgba(0, 0, 0, 0.5);
+
+        .form-header {
+            width: 100%;
+            margin: auto;
+            font-size: 15px;
+            overflow: hidden;
+            background: $gray;
+            color: $mainColor;
+            border-bottom: 1px solid $mainColor;
+            border-radius: 10px 00px 00px 00px;
+
+            h2 {
+                span {
+                    background: $mainColor;
+                    border-radius: 50%;
+                    margin-right: 20px;
+                    cursor: pointer;
+                    float: right;
+                    height: 28px;
+                    width: 30px;
+                    .icon {
+                        color: $white;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        .form {
+            padding: 50px 00px;
+            text-align: center;
+            background: $tableHeader;                
+
+            input {
+                width: 82%;
+                border: none;
+                color: $mainColor;
+                padding: 07px;
+                outline: none;
+                font-size: 12px;
+                margin: 7px auto;
+                border: 1px solid $mainColor;
+            }
+
+            button {
+                width: 85%;
+                border: none;
+                padding: 08px;
+                outline: none;
+                color: $white;
+                cursor: pointer;
+                font-weight: 900;
+                margin: 10px auto;
+                font-size: $medium;
+                background: $mainColor;
+            }
+
+            button:active {
+                background: $activeMainColor;
+            }
+
+            .email-input { border: 0.5px solid rgb(248, 25, 25) }
+            .email-input::placeholder { color: red }
+
+            .password-input { border: 0.5px solid rgb(248, 25, 25) }
+            .password-input::placeholder { color: red }
+
+            .form-result { color: red; font-size: 15px; }
+        }
+
+    }
+    }
+    
+}
