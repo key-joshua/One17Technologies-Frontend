@@ -187,6 +187,7 @@ class Data extends Component {
 
     if (name.length < 1 || phone.length < 1 || dob.length < 1) {
       toast.error('All form fields is required');
+      return;
     }
 
     this.setState({ result: true, showAddForm: false, searchedData: [], searchedDataLoaded: false });
@@ -215,6 +216,7 @@ class Data extends Component {
 
     if (name.length < 1 || phone.length < 1 || dob.length < 1) {
       toast.error('All form fields is required');
+      return;
     }
 
     this.setState({ result: true, showAddForm: false, searchedData: [], searchedDataLoaded: false });
