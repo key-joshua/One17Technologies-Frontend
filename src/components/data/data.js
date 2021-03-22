@@ -185,7 +185,7 @@ class Data extends Component {
     key.preventDefault();
     const { id, name, phone, dob, postPerPage } = this.state;
 
-    if (name.length < 1 && phone.length < 1 && dob.length < 1) {
+    if (name.length < 1 || phone.length < 1 || dob.length < 1) {
       toast.error('All form fields is required');
     }
 
@@ -213,7 +213,7 @@ class Data extends Component {
     key.preventDefault();
     const { name, phone, dob, postPerPage } = this.state;
 
-    if (name.length < 1 && phone.length < 1 && dob.length < 1) {
+    if (name.length < 1 || phone.length < 1 || dob.length < 1) {
       toast.error('All form fields is required');
     }
 
